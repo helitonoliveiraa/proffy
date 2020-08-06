@@ -66,15 +66,15 @@
 }
 
 .buttons-container a.give-classes {
-  background: #541bb1;
+  background: #5f23c0;
 }
 
 .buttons-container a.study:hover {
-  background: var(--color-primary-light);
+  background: var(--color-primary-mode);
 }
 
 .buttons-container a.give-classes:hover {
-  background: var(--color-secundary-dark);
+  background: var(--color-secundary-mode);
 }
 
 .buttons-container a img {
