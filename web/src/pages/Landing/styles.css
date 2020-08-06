@@ -7,7 +7,8 @@
   justify-content: center;
 
   color: var(--color-text-in-primary);
-  background: var(--color-primary);
+  /* background: var(--color-primary); */
+  background: linear-gradient(-90deg, #43CBFF, #9708CC);
 }
 
 .logo-container img {
@@ -61,11 +62,11 @@
 }
 
 .buttons-container a.study {
-  background: var(--color-primary-lighter);
+  background: #43aaff;
 }
 
 .buttons-container a.give-classes {
-  background: var(--color-secundary);
+  background: #541bb1;
 }
 
 .buttons-container a.study:hover {
