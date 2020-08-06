@@ -1,6 +1,10 @@
 <h1 align="center">
-  <img src="./.github/logo.png">
+  <img src="./.github/logo.png" width="100">
 </h1>
+
+<h2>
+  <img src="./.github/proffy_web.png" alt="Proffy Web">
+</h2>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/heliton1988/proffy?color=%23#34CB79">
