@@ -1,5 +1,6 @@
 import React, { useState, FormEvent } from 'react';
 import { useHistory } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 import PageHeader from '../../components/PageHeader';
 import Input from '../../components/Input';
@@ -10,6 +11,7 @@ import Select from '../../components/Select';
 
 import api from '../../services/api';
 
+import 'react-toastify/dist/ReactToastify.min.css';
 import './styles.css';
 
 const TeacherForm: React.FC = () => {
@@ -72,12 +74,12 @@ const TeacherForm: React.FC = () => {
         schedule: scheduleItems,
       })
       .then(() => {
-        alert('Cadastro realizado com sucesso!');
+        toast.success('Cadastro realizado com sucesso!');
 
         history.push('/');
       })
       .catch(() => {
-        alert('Erro no cadastro!');
+        toast.error('Erro no cadastro!');
       });
   }
 

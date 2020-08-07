@@ -1,5 +1,3 @@
-
-
 :root {
   --color-background: #F0F0F7;
   --color-primary-lighter: #9871F5;
@@ -51,6 +49,11 @@ button,
 textarea {
   font: 500 1.6rem Poppins;
   color: var(--color-text-base);
+}
+
+input,
+button {
+  outline: none;
 }
 
 .container {
