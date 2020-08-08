@@ -35,20 +35,20 @@ const Landing: React.FC = () => {
   }
 
   function handleNavigateToStudyPages() {
-    navigation.navigate('Sduty');
+    navigation.navigate('Study');
   }
 
   return (
     <View style={styles.container}>
       <LinearGradient
         // Background Linear Gradient
-        colors={['#43CBFF']}
+        colors={['#43CBFF', 'transparent']}
         style={{
           position: 'absolute',
           left: 0,
           right: 0,
           top: 0,
-          height: 700,
+          height: '100%',
         }}
       />
       <Image source={landingImg} style={styles.banner} />

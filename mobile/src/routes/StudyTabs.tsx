@@ -46,7 +46,7 @@ const StudyTabs: React.FC = () => {
             <Ionicons
               name="ios-easel"
               size={size}
-              color={focused ? '#8257e5' : color}
+              color={focused ? '#9708CC' : color}
             />
           ),
         }}
@@ -61,7 +61,7 @@ const StudyTabs: React.FC = () => {
             <Ionicons
               name="ios-heart"
               size={size}
-              color={focused ? '#8257e5' : color}
+              color={focused ? '#9708CC' : color}
             />
           ),
         }}

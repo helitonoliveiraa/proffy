@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, ImageBackground } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
+import { LinearGradient } from 'expo-linear-gradient';
 
 import giveClassesBgImage from '../../assets/images/give-classes-background.png';
 
@@ -16,6 +17,17 @@ const GiveClasses: React.FC = () => {
 
   return (
     <View style={styles.container}>
+      <LinearGradient
+        // Background Linear Gradient
+        colors={['#43CBFF', 'transparent']}
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          top: 0,
+          height: '100%',
+        }}
+      />
       <ImageBackground
         resizeMode="contain"
         source={giveClassesBgImage}
