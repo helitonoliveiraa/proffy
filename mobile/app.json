@@ -21,6 +21,13 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png", "backgroundColor": "#9708CC"
+      },
+      "package": "com.helitonoliveira.proffy",
+      "versionCode": 1
     }
   }
 }
