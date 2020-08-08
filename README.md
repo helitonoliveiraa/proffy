@@ -3,7 +3,7 @@
 </h1>
 
 <h2>
-  <img src="./.github/proffy_web.png" alt="Proffy Web">
+  <img src="./.github/proffy.png" alt="Proffy Web">
 </h2>
 
 <p align="center">
@@ -67,5 +67,20 @@ Para clonar e rodar essa aplicação é necessário ter as seguintes ferramentas
   $ yarn
 
   ## dê o start no fron-end
+  $ yarn start
+  ```
+
+* **Passo 4**
+
+  roda o mobile da aplicação
+
+  ```bash
+  ## apartir da rais do repositório clonado acesse a pasta mobile
+  $ cd mobile
+
+  ## instale todas as dependências
+  $ yarn
+
+  ## start no mobile da aplicação
   $ yarn start
   ```

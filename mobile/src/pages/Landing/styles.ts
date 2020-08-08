@@ -4,7 +4,7 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#8257E5',
+    backgroundColor: '#9708CC',
     justifyContent: 'center',
     padding: 40,
   },
@@ -43,11 +43,11 @@ const styles = StyleSheet.create({
   },
 
   buttonPrimary: {
-    backgroundColor: '#9878f5',
+    backgroundColor: '#43aaff',
   },
 
   buttonSecondary: {
-    backgroundColor: '#04d362',
+    backgroundColor: '#5f23c0',
   },
 
   buttonText: {

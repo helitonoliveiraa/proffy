@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, Image, Text } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { RectButton } from 'react-native-gesture-handler';
+import { LinearGradient } from 'expo-linear-gradient';
 
 import api from '../../services/api';
 
@@ -39,6 +40,17 @@ const Landing: React.FC = () => {
 
   return (
     <View style={styles.container}>
+      <LinearGradient
+        // Background Linear Gradient
+        colors={['#43CBFF']}
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          top: 0,
+          height: 700,
+        }}
+      />
       <Image source={landingImg} style={styles.banner} />
 
       <Text style={styles.title}>
