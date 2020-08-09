@@ -25,6 +25,12 @@
   <img src="./.github/loading.gif" width="10">
 </p>
 
+## **Sobre**
+
+Proffy é uma aplicação que foi desenvolvida na **Next Level Week**, treinamento oferecido pela **Rocketseat**. Nela é possível que professores/instrutores possam criar um cadastro informando a matéria de sua escialidade, dias da semana e horaŕios que estará disponível para ministrar as aulas.
+
+Por outro lado é possível que um aluno, filtre por matérias de interessa para estudo e encontre os professores para que possa marcar as aulas. O aluno também pode favoritar ou desfavoritar um ou mais professos.
+
 ## **Como utilizar**
 
 Para clonar e rodar essa aplicação é necessário ter as seguintes ferramentas instaladas em seu computador; `Git`, `Node.js v12.16.2` ou superior, `yarn v1.22.4`. 
