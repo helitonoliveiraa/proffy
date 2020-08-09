@@ -60,11 +60,11 @@ const TeacherForm: React.FC = () => {
     setScheduleItems(updatedScheduleItems);
   }
 
-  function handleCreateClass(e: FormEvent<HTMLFormElement>) {
+  async function handleCreateClass(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
-    api
-      .post('classes', {
+    try {
+      await api.post('classes', {
         name,
         avatar,
         whatsapp,
@@ -72,15 +72,16 @@ const TeacherForm: React.FC = () => {
         subject,
         cost: Number(cost),
         schedule: scheduleItems,
-      })
-      .then(() => {
-        toast.success('Cadastro realizado com sucesso!');
-
-        history.push('/');
-      })
-      .catch(() => {
-        toast.error('Erro no cadastro!');
       });
+
+      toast.success('Cadastro realizado com sucesso!');
+
+      setTimeout(() => {
+        history.push('/');
+      }, 4000);
+    } catch (err) {
+      toast.error('Erro no cadastro!');
+    }
   }
 
   return (
@@ -178,7 +179,8 @@ const TeacherForm: React.FC = () => {
                   label="Dia da semana"
                   value={scheduleItem.week_day}
                   onChange={e =>
-                    setScheduleItemValue(index, 'week_day', e.target.value)}
+                    setScheduleItemValue(index, 'week_day', e.target.value)
+                  }
                   options={[
                     { value: '0', label: 'Domingo' },
                     { value: '1', label: 'Segunda-feira' },
@@ -195,7 +197,8 @@ const TeacherForm: React.FC = () => {
                   type="time"
                   value={scheduleItem.from}
                   onChange={e =>
-                    setScheduleItemValue(index, 'from', e.target.value)}
+                    setScheduleItemValue(index, 'from', e.target.value)
+                  }
                 />
 
                 <Input
@@ -204,8 +207,7 @@ const TeacherForm: React.FC = () => {
                   type="time"
                   value={scheduleItem.to}
                   onChange={e =>
-                    setScheduleItemValue(index, 'to', e.target.value)
-                  }
+                    setScheduleItemValue(index, 'to', e.target.value)}
                 />
               </div>
             ))}
