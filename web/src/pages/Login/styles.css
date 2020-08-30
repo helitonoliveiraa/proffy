@@ -83,21 +83,48 @@
 }
 
 .login form div.forget input[type="checkbox"] {
-  width: 24px;
-  height: 24px;
-
   border-radius: 8px;
   margin-right: 16px;
 }
 
+.login form div.forget input[type="checkbox"] {
+  --active-inner: #fff;
+  --background: #fff;
+  --disabled: #F6F8FF;
+  --disabled-inner: #E1E6F9;
+  width: 24px;
+  height: 24px;
+  -webkit-appearance: none;
+  display: inline-block;
+  border: 1px solid var(--bc, var(--color-line-in-white));
+  background: var(--b, var(--color-input-background));
+}
+
+.login form div.forget input[type="checkbox"]:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
 .login form div.forget input[type="checkbox"]:checked {
-  background: #04D361;
+  --b: var(--color-secundary);
+  --bc: var(--color-secundary);
+  --d-o: .3s;
+  --d-t: .6s;
+  --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+
+  color: #fff;
+
 }
 
 .login form input.text-login {
   width: 100%;
   padding: 24px;
-  border: 1px solid #E6E6F0;
+  border: 1px solid var(--color-line-in-white);
+  font-size: 16px;
+  color: var(--color-text-complement);
 }
 
 .login form input#email {
@@ -118,13 +145,46 @@
   border: 0;
   border-radius: 8px;
 
-  background: #DCDCE5;
-  color: #9C98A6;
+  background: var(--color-button-desable-background);
+  color: var(--color-text-complement);
   font-weight: bold;
   transition: background 0.2s;
 }
 
 .login form button:hover {
-  background: #04D361;
-  color: #ffffff;
+  background: var(--color-secundary);
+  color: var(--color-button-text);
+}
+
+.login div.footerr {
+  max-width: 352px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 128px;
+}
+
+.login div.footerr strong {
+  width: 129px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.login div.footerr strong span {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.login div.footerr div.image {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.login div.footerr div.image span {
+  color: var(--color-text-complement);
+}
+
+.login div.footerr div.image img {
+  margin-left: 8px;
 }
