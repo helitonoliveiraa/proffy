@@ -3,6 +3,7 @@ import React from 'react';
 import backgroundImg from '../../assets/images/Background.svg';
 import proffyLogo from '../../assets/images/Proffy.svg';
 import text from '../../assets/images/text.svg';
+import purpleHeart from '../../assets/images/icons/purple-heart.svg';
 
 import './styles.css';
 
@@ -44,6 +45,18 @@ const Login: React.FC = () => {
 
           <button type="submit">Entrar</button>
         </form>
+
+        <div className="footerr">
+          <strong>
+            Não tem conta?
+            <span>Cadastre-se</span>
+          </strong>
+
+          <div className="image">
+            <span>É de graça</span>
+            <img src={purpleHeart} alt="Purple Heart" />
+          </div>
+        </div>
       </div>
     </div>
   );
