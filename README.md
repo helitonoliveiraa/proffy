@@ -7,7 +7,7 @@
 </h2>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/heliton1988/proffy?color=%23#34CB79">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/helitonoliveiraa/proffy?color=%23#34CB79">
 
   <a href="https://www.linkedin.com/in/helitonoliveira/">
     <img alt="Made by Héliton Oliveira" src="https://img.shields.io/badge/made%20by-Héliton Oliveira-%23#34CB79">
@@ -15,15 +15,11 @@
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%23#34CB79">
 
-  <a href="https://github.com/heliton1988/bootcamp-gostack-fastfeet/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/heliton1988/proffy?style=social">
+  <a href="https://github.com/helitonoliveiraa/bootcamp-gostack-fastfeet/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/helitonoliveiraa/proffy?style=social">
   </a>
 </p>
 
-<p align="center">
-  projeto em desenvolvimento...
-  <img src="./.github/loading.gif" width="10">
-</p>
 
 ## **Sobre**
 
